@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Αθλητικός Σύλλογος Ταεκβοντό ΔΑΥΙΔ</title>
+    <meta name="description" content="Ο Α.Σ. Ταεκβοντό ΔΑΥΙΔ στο Ρέθυμνο προσφέρει υψηλού επιπέδου εκπαίδευση Taekwondo για παιδιά και ενήλικες. Σχολή πολεμικών τεχνών με έμφαση στην αυτοάμυνα, τον σεβασμό και την εξέλιξη.">
+    <meta name="keywords" content="Ταεκβοντο Ρέθυμνο, taekwondo rethimno, πολεμικές τέχνες, σχολή πολεμικών τεχνών, ταεκβοντο δαυιδ, αυτοάμυνα, καράτε, ζιουζιτσου, ρέθυμνο, αθλητικός σύλλογος">
+    
+    <!-- Open Graph Meta Tags (Για κοινοποιήσεις σε Facebook, Viber κλπ) -->
+    <meta property="og:title" content="Α.Σ. Ταεκβοντό ΔΑΥΙΔ - Σχολή Πολεμικών Τεχνών στο Ρέθυμνο">
+    <meta property="og:description" content="Γιατί για εμάς το Ταεκβοντό δεν είναι απλώς ένα άθλημα. Είναι ένας τρόπος ζωής. Μαθαίνουμε να μαχόμαστε, μαθαίνουμε να ζούμε.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.david-tkd.gr">
+    <meta property="og:image" content="https://www.david-tkd.gr/images/og-image.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header / Πλοήγηση -->
+    <header id="main-header">
+        <div class="navbar">
+            <a href="#" class="logo"><img src="images/logo.png" alt="Α.Σ. ΔΑΥΙΔ Logo"> Α.Σ. <span>ΔΑΥΙΔ</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Ιστορία & Φιλοσοφία</a></li>
+                <li><a href="#taekwondo">Το Άθλημα</a></li>
+                <li><a href="#benefits">Οφέλη</a></li>
+                <li><a href="#team">Η Ομάδα</a></li>
+                <li><a href="#classes">Τμήματα</a></li>
+                <li><a href="#rules">Κανονισμός</a></li>
+                <li><a href="#contact" class="nav-cta">Επικοινωνία</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Μενού">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Slider -->
+    <section class="hero-slider" id="heroSlider">
+        <div class="slider-track">
+            <div class="slide active" style="background-image: url('images/photo1.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Στιγμές που <span class="text-accent">Αξίζουν</span></h1>
+                    <a href="#classes" class="btn btn-primary">Γνωρίστε τα Τμήματά μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/photo2.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Η Δύναμη ξεκινά από <span class="text-accent">Μέσα</span></h1>
+                    <a href="#about" class="btn btn-primary">Η Ιστορία μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/photo3.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>ΜΑΖΙ ΠΙΟ <span class="text-accent">ΔΥΝΑΤΟΙ</span></h1>
+                    <a href="#team" class="btn btn-primary">Οι Άνθρωποί μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/photo4.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Ξεκίνα <span class="text-accent">Σήμερα</span></h1>
+                    <a href="#classes" class="btn btn-primary">Δοκιμαστική Προπόνηση</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery1.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>ΧΤΙΖΟΥΜΕ ΠΡΩΤΑΘΛΗΤΕΣ. <span class="text-accent">ΔΙΑΜΟΡΦΩΝΟΥΜΕ ΧΑΡΑΚΤΗΡΕΣ</span></h1>
+                    <a href="#about" class="btn btn-primary">Η Φιλοσοφία μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery2.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Πάντα <span class="text-accent">Δίπλα σου</span></h1>
+                    <a href="#team" class="btn btn-primary">Γνωρίστε την Ομάδα</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery3.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Πίστη στον <span class="text-accent">Εαυτό σου</span></h1>
+                    <a href="#classes" class="btn btn-primary">Τα Τμήματά μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery4.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Συνεχής <span class="text-accent">Εξέλιξη</span></h1>
+                    <a href="#benefits" class="btn btn-primary">Τα Οφέλη</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery5.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Μικροί <span class="text-accent">Πρωταθλητές</span></h1>
+                    <a href="#contact" class="btn btn-primary">Ελάτε στην Οικογένειά μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery6.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Υπομονή & <span class="text-accent">Επιμονή</span></h1>
+                    <a href="#about" class="btn btn-primary">Η Φιλοσοφία μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery7.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Όλοι Μαζί μια <span class="text-accent">Ομάδα</span></h1>
+                    <a href="#team" class="btn btn-primary">Γνωρίστε μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery8.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>ΧΤΙΖΟΥΜΕ ΠΡΩΤΑΘΛΗΤΕΣ. <span class="text-accent">ΔΙΑΜΟΡΦΩΝΟΥΜΕ ΧΑΡΑΚΤΗΡΕΣ</span></h1>
+                    <a href="#classes" class="btn btn-primary">Δοκιμαστική Προπόνηση</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery9.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Χαρά & <span class="text-accent">Παιχνίδι</span></h1>
+                    <a href="#contact" class="btn btn-primary">Ελάτε στην Παρέα μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery10.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Πραγματική <span class="text-accent">Καταξίωση</span></h1>
+                    <a href="#benefits" class="btn btn-primary">Τα Οφέλη</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery11.jpg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Επιβράβευση της <span class="text-accent">Προσπάθειας</span></h1>
+                    <a href="#classes" class="btn btn-primary">Ξεκινήστε Μαζί Μας</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('images/gallery12.png');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content">
+                    <span class="slide-badge">🥋 Α.Σ. Ταεκβοντό ΔΑΥΙΔ</span>
+                    <h1>Ασφάλεια Πάνω <span class="text-accent">Απ' Όλα</span></h1>
+                    <a href="#about" class="btn btn-primary">Μάθετε Περισσότερα</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Προηγούμενη">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <button class="slider-btn slider-next" id="sliderNext" aria-label="Επόμενη">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        
+        <!-- Slider Dots -->
+        <div class="slider-dots" id="sliderDots">
+            <button class="dot active" data-slide="0" aria-label="Slide 1"></button>
+            <button class="dot" data-slide="1" aria-label="Slide 2"></button>
+            <button class="dot" data-slide="2" aria-label="Slide 3"></button>
+            <button class="dot" data-slide="3" aria-label="Slide 4"></button>
+            <button class="dot" data-slide="4" aria-label="Slide 5"></button>
+            <button class="dot" data-slide="5" aria-label="Slide 6"></button>
+            <button class="dot" data-slide="6" aria-label="Slide 7"></button>
+            <button class="dot" data-slide="7" aria-label="Slide 8"></button>
+            <button class="dot" data-slide="8" aria-label="Slide 9"></button>
+            <button class="dot" data-slide="9" aria-label="Slide 10"></button>
+            <button class="dot" data-slide="10" aria-label="Slide 11"></button>
+            <button class="dot" data-slide="11" aria-label="Slide 12"></button>
+            <button class="dot" data-slide="12" aria-label="Slide 13"></button>
+            <button class="dot" data-slide="13" aria-label="Slide 14"></button>
+            <button class="dot" data-slide="14" aria-label="Slide 15"></button>
+            <button class="dot" data-slide="15" aria-label="Slide 16"></button>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="slider-progress">
+            <div class="slider-progress-bar" id="sliderProgress"></div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ιστορία & Φιλοσοφία -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid-2 text-block">
+                <div class="reveal-left">
+                    <div class="section-label">Ποιοι Είμαστε</div>
+                    <h2 class="section-heading">Η Ιστορία μας</h2>
+                    <p>Κάθε μεγάλη διαδρομή ξεκινά από ένα όνειρο. Ο <strong>Αθλητικός Σύλλογος Ταεκβοντό ΔΑΥΙΔ</strong> δημιουργήθηκε με στόχο να προσφέρει στα παιδιά, στους εφήβους και στους ενήλικες έναν χώρο όπου ο αθλητισμός συναντά τις αξίες, τον σεβασμό και την προσωπική εξέλιξη.</p>
+                    <p>Από την πρώτη ημέρα λειτουργίας του, ο σύλλογος έχει ως αποστολή να μεταδίδει τη φιλοσοφία του Ταεκβοντό όχι μόνο ως ολυμπιακού αθλήματος, αλλά και ως τρόπου ζωής. Μέσα από την καθημερινή προπόνηση, οι μαθητές μαθαίνουν να θέτουν στόχους, να ξεπερνούν τις δυσκολίες και να εξελίσσονται συνεχώς.</p>
+                    <p>Στον σύλλογό μας δεν υπάρχουν μόνο μαθητές. Υπάρχει μια ομάδα ανθρώπων που προπονούνται, συνεργάζονται, στηρίζουν ο ένας τον άλλον και μοιράζονται κοινές αξίες. Για εμάς, κάθε νέο μέλος γίνεται μέρος μιας μεγάλης οικογένειας.</p>
+                </div>
+                <div class="reveal-right">
+                    <div class="section-label">Τι Πιστεύουμε</div>
+                    <h2 class="section-heading">Η Φιλοσοφία μας</h2>
+                    <p>Πιστεύουμε ότι κάθε άνθρωπος μπορεί να εξελιχθεί όταν βρεθεί στο κατάλληλο περιβάλλον. Η προπόνηση δεν έχει ως μοναδικό σκοπό τη βελτίωση της φυσικής κατάστασης ή την κατάκτηση μεταλλίων. Η καθημερινή μας προσπάθεια βασίζεται σε τέσσερις θεμελιώδεις αρχές:</p>
+                    <ul class="value-list">
+                        <li>
+                            <div class="value-icon">🙏</div>
+                            <div><strong>Σεβασμός:</strong> Μαθαίνουμε να σεβόμαστε τον εαυτό μας, τους συναθλητές μας και κάθε άνθρωπο γύρω μας.</div>
+                        </li>
+                        <li>
+                            <div class="value-icon">💪</div>
+                            <div><strong>Πειθαρχία:</strong> Συνέπεια, υπευθυνότητα και επιμονή.</div>
+                        </li>
+                        <li>
+                            <div class="value-icon">📈</div>
+                            <div><strong>Εξέλιξη:</strong> Ο καθένας προχωρά με τον δικό του ρυθμό. Δεν συγκρίνουμε τους μαθητές μεταξύ τους.</div>
+                        </li>
+                        <li>
+                            <div class="value-icon">❤️</div>
+                            <div><strong>Οικογένεια:</strong> Δημιουργούμε ένα περιβάλλον όπου όλοι αισθάνονται ασφάλεια, αποδοχή και στήριξη.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Το Ταεκβοντό -->
+    <section id="taekwondo" class="section section-dark">
+        <div class="container">
+            <div class="section-label text-center">Το Άθλημα</div>
+            <h2 class="section-title">Το Ταεκβοντό</h2>
+            
+            <div class="grid-2" style="margin-bottom: 60px;">
+                <div class="card glass-card reveal-up">
+                    <div class="card-icon">🥋</div>
+                    <h3>Τι είναι το Ταεκβοντό</h3>
+                    <p>Σύγχρονη κορεατική πολεμική τέχνη και ολυμπιακό άθλημα που συνδυάζει τη σωματική άσκηση, την πνευματική καλλιέργεια και την ανάπτυξη του χαρακτήρα.</p>
+                    <div class="term-grid">
+                        <div class="term-item">
+                            <span class="term-kr">태</span>
+                            <span class="term-name">Tae</span>
+                            <span class="term-desc">Τεχνικές με τα πόδια</span>
+                        </div>
+                        <div class="term-item">
+                            <span class="term-kr">권</span>
+                            <span class="term-name">Kwon</span>
+                            <span class="term-desc">Τεχνικές με τα χέρια</span>
+                        </div>
+                        <div class="term-item">
+                            <span class="term-kr">도</span>
+                            <span class="term-name">Do</span>
+                            <span class="term-desc">Δρόμος / Τρόπος ζωής</span>
+                        </div>
+                    </div>
+                    <p class="text-muted">Το «Do» εκφράζει τη συνεχή προσπάθεια για προσωπική εξέλιξη, αυτοβελτίωση και αρμονία μεταξύ σώματος και πνεύματος.</p>
+                </div>
+                <div class="card glass-card reveal-up" style="animation-delay: 0.2s;">
+                    <div class="card-icon">⭐</div>
+                    <h3>Οι 5 Αρχές του Ταεκβοντό</h3>
+                    <ul class="principles-list">
+                        <li>
+                            <span class="principle-num">01</span>
+                            <div>
+                                <strong>Σεβασμός (Courtesy)</strong>
+                                <p>Η βάση κάθε ανθρώπινης σχέσης.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="principle-num">02</span>
+                            <div>
+                                <strong>Ακεραιότητα (Integrity)</strong>
+                                <p>Ειλικρίνεια, υπευθυνότητα και συνέπεια.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="principle-num">03</span>
+                            <div>
+                                <strong>Επιμονή (Perseverance)</strong>
+                                <p>Μαθαίνουμε να μην εγκαταλείπουμε.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="principle-num">04</span>
+                            <div>
+                                <strong>Αυτοέλεγχος (Self-Control)</strong>
+                                <p>Ψυχραιμία και σωστή διαχείριση συναισθημάτων.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="principle-num">05</span>
+                            <div>
+                                <strong>Ακατάβλητο Πνεύμα (Indomitable Spirit)</strong>
+                                <p>Ο αθλητής δεν τα παρατά ποτέ.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="history-banner reveal-up">
+                <div class="history-content">
+                    <h3>Η Ιστορία & Η Ελληνική Πραγματικότητα</h3>
+                    <p>Οι ρίζες του Ταεκβοντό βρίσκονται στην Κορέα. Το 1955 καθιερώθηκε επίσημα η ονομασία του και το 2000 εντάχθηκε επίσημα στο πρόγραμμα των Ολυμπιακών Αγώνων. Στην Ελλάδα, έκανε την εμφάνισή του στα τέλη της δεκαετίας του 1960. Σήμερα, εκατομμύρια αθλητές όλων των ηλικιών ασχολούνται με το άθλημα.</p>
+                </div>
+                <div class="history-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="1955">1955</span>
+                        <span class="stat-label">Επίσημη Ονομασία</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="2000">2000</span>
+                        <span class="stat-label">Ολυμπιακό Άθλημα</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">210+</span>
+                        <span class="stat-label">Χώρες Παγκοσμίως</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Οφέλη -->
+    <section id="benefits" class="section">
+        <div class="container">
+            <div class="section-label text-center">Γιατί Ταεκβοντό</div>
+            <h2 class="section-title">Τα Οφέλη του Ταεκβοντό</h2>
+            <div class="grid-3">
+                <div class="card benefit-card reveal-up">
+                    <div class="benefit-age">3-12</div>
+                    <h3>Για τα Παιδιά</h3>
+                    <p>Ένα πολύτιμο σχολείο ζωής. Μαθαίνουν να ακολουθούν κανόνες, να σέβονται και να συνεργάζονται.</p>
+                    <ul class="check-list">
+                        <li>Ενισχύει τη συγκέντρωση</li>
+                        <li>Βελτιώνει τη φυσική κατάσταση</li>
+                        <li>Αποκτούν αυτοπεποίθηση & πειθαρχία</li>
+                        <li>Μαθαίνουν διαχείριση συναισθημάτων</li>
+                    </ul>
+                </div>
+                <div class="card benefit-card reveal-up" style="animation-delay: 0.15s;">
+                    <div class="benefit-age">13-17</div>
+                    <h3>Για τους Εφήβους</h3>
+                    <p>Δημιουργική έκφραση, εκτόνωση ενέργειας και απόκτηση αυτοπεποίθησης σε μια απαιτητική περίοδο.</p>
+                    <ul class="check-list">
+                        <li>Διαχείριση άγχους & στοχοθεσία</li>
+                        <li>Εκμάθηση υπευθυνότητας</li>
+                        <li>Αγωνιστική πορεία (ΕΛΟΤ)</li>
+                        <li>Δυνατότητα μοριοδότησης για ΑΕΙ</li>
+                    </ul>
+                </div>
+                <div class="card benefit-card reveal-up" style="animation-delay: 0.3s;">
+                    <div class="benefit-age">18+</div>
+                    <h3>Για τους Ενήλικες</h3>
+                    <p>Μοναδικός τρόπος άσκησης που συνδυάζει φυσική κατάσταση, αυτοάμυνα και ψυχική ευεξία, χωρίς να απαιτείται εμπειρία.</p>
+                    <ul class="check-list">
+                        <li>Μείωση άγχους καθημερινότητας</li>
+                        <li>Αύξηση δύναμης και ευλυγισίας</li>
+                        <li>Ενίσχυση αυτοπεποίθησης</li>
+                        <li>Αποτελεσματική αυτοάμυνα</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Η Ομάδα Μας -->
+    <section id="team" class="section section-dark">
+        <div class="container">
+            <div class="section-label text-center">Η Ομάδα</div>
+            <h2 class="section-title">Οι Άνθρωποί Μας</h2>
+            <p class="section-subtitle">Πίσω από κάθε επιτυχημένη προπόνηση βρίσκεται μια ομάδα που αγαπά πραγματικά αυτό που κάνει. Οι προπονητές μας καθοδηγούν, εμπνέουν και στηρίζουν κάθε μαθητή στο προσωπικό του ταξίδι.</p>
+            
+            <div class="grid-3">
+                <div class="card coach-card reveal-up">
+                    <div class="coach-avatar">ΔΤ</div>
+                    <h3>Δαβίδ Τσοντάκης</h3>
+                    <span class="coach-title">Προπονητής</span>
+                    <div class="coach-badge">4ο Dan</div>
+                    <p>Ασχολείται με το Ταεκβοντό περισσότερα από 40 χρόνια και διαθέτει 20+ χρόνια προπονητικής εμπειρίας. Πιστοποιημένος προπονητής από τη Γ.Γ.Α. Η μεγαλύτερη ανταμοιβή του είναι να βλέπει τους μαθητές του να αποκτούν αυτοπεποίθηση και να χαμογελούν.</p>
+                </div>
+                <div class="card coach-card reveal-up" style="animation-delay: 0.15s;">
+                    <div class="coach-avatar">ΜΤ</div>
+                    <h3>Μαρία Τσοντάκη</h3>
+                    <span class="coach-title">Μέλος Προπονητικής Ομάδας</span>
+                    <div class="coach-badge">3ο Dan</div>
+                    <p>20+ χρόνια στο άθλημα. Πιστοποιημένη από τη Γ.Γ.Α., απόφοιτη ΙΕΚ (προπονητική) και Παιδαγωγικού. Υπήρξε μέλος της Εθνικής Ομάδας με 5 Πανελλήνια Πρωταθλήματα. Συνδυάζει την αθλητική και παιδαγωγική κατάρτιση.</p>
+                </div>
+                <div class="card coach-card reveal-up" style="animation-delay: 0.3s;">
+                    <div class="coach-avatar">ΔΚ</div>
+                    <h3>Δημήτρης Κλήρης</h3>
+                    <span class="coach-title">Μέλος Προπονητικής Ομάδας</span>
+                    <div class="coach-badge">2ο Dan</div>
+                    <p>Ασχολείται 20+ χρόνια, πιστοποιημένος από τη Γ.Γ.Α. Απόφοιτος Κοινωνικής Εργασίας με εκπαίδευση στη Συμβουλευτική Ψυχοθεραπεία. Προσεγγίζει τους μαθητές με βαθιά κατανόηση και σεβασμό.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Υποσχέσεις / Γιατί εμάς -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2">
+                <div class="card promise-card reveal-left">
+                    <div class="card-icon">🎯</div>
+                    <h3>Οι Υποσχέσεις μας</h3>
+                    <ul class="dobok-list">
+                        <li>Ένα ασφαλές και φιλικό περιβάλλον.</li>
+                        <li>Σεβασμό στην προσωπικότητα και στον ρυθμό εξέλιξής.</li>
+                        <li>Ποιοτική εκπαίδευση από πιστοποιημένους προπονητές.</li>
+                        <li>Καθοδήγηση με υπομονή, συνέπεια και αγάπη.</li>
+                        <li>Ίσες ευκαιρίες για όλους.</li>
+                        <li>Καλλιέργεια αυτοπεποίθησης, υπευθυνότητας και συνεργασίας.</li>
+                    </ul>
+                </div>
+                <div class="card promise-card reveal-right">
+                    <div class="card-icon">🏠</div>
+                    <h3>Γιατί οι οικογένειες μας εμπιστεύονται</h3>
+                    <ul class="check-list">
+                        <li>Πιστοποιημένοι προπονητές με πολυετή εμπειρία.</li>
+                        <li>Τμήματα για όλες τις ηλικίες (από 3 ετών).</li>
+                        <li>Ασφαλές, καθαρό και φιλικό περιβάλλον προπόνησης.</li>
+                        <li>Έμφαση στη σωστή τεχνική & σταδιακή εξέλιξη.</li>
+                        <li>Ανάπτυξη αυτοπεποίθησης και πειθαρχίας.</li>
+                        <li>Προσωπική επαφή με το παιδί & την οικογένεια.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Τμήματα -->
+    <section id="classes" class="section section-dark">
+        <div class="container">
+            <div class="section-label text-center">Προγράμματα</div>
+            <h2 class="section-title">Τα Τμήματά μας</h2>
+            <div class="grid-3">
+                <div class="card class-card reveal-up">
+                    <div class="class-emoji">👶</div>
+                    <h3>Προσχολική Ηλικία (3–5 ετών)</h3>
+                    <p>Τα παιδιά γνωρίζουν το Ταεκβοντό μέσα από το παιχνίδι. Ανάπτυξη βασικής κινητικότητας, ισορροπίας, συντονισμού και κοινωνικοποίησης.</p>
+                </div>
+                <div class="card class-card reveal-up" style="animation-delay: 0.1s;">
+                    <div class="class-emoji">🧒</div>
+                    <h3>Παιδικό Τμήμα</h3>
+                    <p>Εκμάθηση βασικών τεχνικών και αξιών του αθλήματος. Παιχνίδια ανάπτυξης δεξιοτήτων, φυσική κατάσταση και προετοιμασία για εξετάσεις ζωνών.</p>
+                </div>
+                <div class="card class-card reveal-up" style="animation-delay: 0.2s;">
+                    <div class="class-emoji">🧑</div>
+                    <h3>Εφηβικό Τμήμα</h3>
+                    <p>Αυτοπειθαρχία, διαχείριση άγχους και αυτοπεποίθηση. Τεχνική εξέλιξη, αυτοάμυνα και (προαιρετική) αγωνιστική προετοιμασία.</p>
+                </div>
+                <div class="card class-card reveal-up" style="animation-delay: 0.3s;">
+                    <div class="class-emoji">🏋️</div>
+                    <h3>Τμήμα Ενηλίκων</h3>
+                    <p>Απευθύνεται σε αρχάριους & προχωρημένους. Βελτίωση φυσικής κατάστασης, ενδυνάμωση, ευλυγισία και τεχνικές αυτοάμυνας, χωρίς άγχος.</p>
+                </div>
+                <div class="card class-card reveal-up" style="animation-delay: 0.4s;">
+                    <div class="class-emoji">🏆</div>
+                    <h3>Αγωνιστικό Τμήμα</h3>
+                    <p>Για αθλητές υψηλού επιπέδου. Περιλαμβάνει αγωνιστική τεχνική, τακτική, κορυφαία φυσική & ψυχολογική προετοιμασία, συμμετοχή σε πρωταθλήματα.</p>
+                </div>
+                <div class="card class-card class-cta reveal-up" style="animation-delay: 0.5s;">
+                    <div class="class-emoji">😊</div>
+                    <h3>Η Πρώτη Προπόνηση</h3>
+                    <p>Χρειάζεστε μόνο: Άνετα αθλητικά ρούχα, νερό, πετσέτα και χαμόγελο! Δεν απαιτείται προηγούμενη εμπειρία.</p>
+                    <a href="#contact" class="btn btn-primary btn-sm">Κλείστε Ραντεβού</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Κανονισμός Λειτουργίας -->
+    <section id="rules" class="section">
+        <div class="container">
+            <div class="section-label text-center">Πληροφορίες</div>
+            <h2 class="section-title section-title-dark">Κανονισμός Λειτουργίας & Συμβουλές</h2>
+            
+            <div class="grid-2 text-block">
+                <div class="reveal-left">
+                    <div class="rules-group">
+                        <h3><span class="rules-icon">🏥</span> Υγεία & Ασφάλεια</h3>
+                        <ul class="check-list">
+                            <li>Υποχρεωτική η <strong>Κάρτα Υγείας Αθλητή</strong> από Καρδιολόγο.</li>
+                            <li>Όλοι οι αθλητές άνω των 7 ετών εκδίδουν <strong>Δελτίο Αθλητικής Ιδιότητας</strong> (ΕΛΟΤ).</li>
+                            <li>Οι αθλητές άνω των 9 ετών εκδίδουν <strong>Ψηφιακή Κάρτα Αθλητή</strong>.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rules-group">
+                        <h3><span class="rules-icon">💰</span> Οικονομική Πολιτική & Παροχές</h3>
+                        <ul class="check-list">
+                            <li>Η συνδρομή καταβάλλεται έως την 5η ημέρα κάθε μήνα.</li>
+                            <li>Ειδικές εκπτώσεις για φοιτητές και αδέλφια.</li>
+                            <li>Προνομιακά προγράμματα 3/6 μηνών.</li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="reveal-right">
+                    <div class="rules-group">
+                        <h3><span class="rules-icon">📋</span> Υποχρεώσεις Αθλητών & Γονέων</h3>
+                        <ul class="check-list">
+                            <li>Οι αθλητές προμηθεύονται υποχρεωτικά την επίσημη στολή (Dobok) και το μπλουζάκι του συλλόγου.</li>
+                            <li>Σεβασμός στους προπονητές, συναθλητές, γονείς και στον χώρο.</li>
+                            <li>Συνεργασία των γονέων με τους προπονητές, έγκαιρη προσέλευση, αποφυγή παρεμβάσεων κατά την προπόνηση.</li>
+                            <li>Ενθάρρυνση των παιδιών χωρίς πίεση για άμεσες επιτυχίες.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Επικοινωνία -->
+    <section id="contact" class="section section-dark">
+        <div class="container">
+            <div class="section-label text-center">Επικοινωνήστε</div>
+            <h2 class="section-title">Ελάτε στην Οικογένειά μας</h2>
+            <div class="grid-2">
+                <div class="contact-info reveal-left">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Διεύθυνση</strong>
+                            <p><a href="https://maps.app.goo.gl/RstVm86zPP8RtThBA" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">Νέας Φώκαιας 6, Ρέθυμνο 741 33</a></p>
+                            <p style="margin-top: 6px;"><a href="https://share.google/D5z7nJBMtoK26gQqK" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">Εμμανουήλ Παχλά 60, Περιβόλια</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Τηλέφωνο</strong>
+                            <p><a href="tel:6988467284" style="color: var(--accent)">698 846 7284</a><br><a href="tel:6986853799" style="color: var(--accent)">698 685 3799</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">⏰</div>
+                        <div>
+                            <strong>Ωράριο Προπονήσεων</strong>
+                            <p>Δευτέρα - Παρασκευή: 2:30 – 9:30 μ.μ.<br>Σάββατο: 1:30 – 5:30 μ.μ.<br>Κυριακή: Κλειστά</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/p/%CE%91%CE%A3-%CE%94%CE%B1%CF%85%CE%B9%CE%B4-100089704203961/" target="_blank" rel="noopener" class="social-btn" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                        </a>
+                        <a href="https://www.instagram.com/a.sdavid_rethymno/" target="_blank" rel="noopener" class="social-btn" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrap reveal-right">
+                    <form class="contact-form" id="contactForm" action="https://formsubmit.co/david.sxolipolemikontexnon@gmail.com" method="POST">
+                        <input type="hidden" name="_subject" value="Νέο ενδιαφέρον για δοκιμαστική προπόνηση - Α.Σ. ΔΑΥΙΔ">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="text" name="_honey" style="display:none">
+                        <input type="hidden" name="_next" value="">
+                        <div class="form-group">
+                            <input type="text" name="name" id="formName" placeholder="Ονοματεπώνυμο" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="formEmail" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" name="phone" id="formPhone" placeholder="Τηλέφωνο">
+                        </div>
+                        <div class="form-group">
+                            <select name="interest" id="formInterest">
+                                <option value="">Ενδιαφέρομαι για...</option>
+                                <option value="preschool">Προσχολική Ηλικία (3–5 ετών)</option>
+                                <option value="kids">Παιδικό Τμήμα</option>
+                                <option value="teens">Εφηβικό Τμήμα</option>
+                                <option value="adults">Τμήμα Ενηλίκων</option>
+                                <option value="competitive">Αγωνιστικό Τμήμα</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="formMessage" rows="4" placeholder="Μήνυμα"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Αποστολή Μηνύματος</button>
+                        <p id="formStatus" style="margin-top: 12px; text-align: center; font-size: 14px;"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="logo"><img src="images/logo.png" alt="Α.Σ. ΔΑΥΙΔ Logo" loading="lazy"> Α.Σ. <span>ΔΑΥΙΔ</span></a>
+                    <p>Αποστολή μας είναι να προσφέρουμε υψηλού επιπέδου εκπαίδευση μέσα σε ένα ασφαλές, σύγχρονο και ανθρώπινο περιβάλλον.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Σύνδεσμοι</h4>
+                    <ul>
+                        <li><a href="#about">Ιστορία & Φιλοσοφία</a></li>
+                        <li><a href="#taekwondo">Το Άθλημα</a></li>
+                        <li><a href="#benefits">Οφέλη</a></li>
+                        <li><a href="#team">Η Ομάδα</a></li>
+                        <li><a href="#classes">Τμήματα</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Επικοινωνία</h4>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/RstVm86zPP8RtThBA" target="_blank" rel="noopener">📍 Νέας Φώκαιας 6, Ρέθυμνο 741 33</a></li>
+                        <li><a href="https://share.google/D5z7nJBMtoK26gQqK" target="_blank" rel="noopener">📍 Εμμανουήλ Παχλά 60, Περιβόλια</a></li>
+                        <li>📞 698 846 7284 / 698 685 3799</li>
+                        <li><a href="https://www.facebook.com/p/%CE%91%CE%A3-%CE%94%CE%B1%CF%85%CE%B9%CE%B4-100089704203961/" target="_blank" rel="noopener">📘 Facebook</a></li>
+                        <li><a href="https://www.instagram.com/a.sdavid_rethymno/" target="_blank" rel="noopener">📸 Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Αθλητικός Σύλλογος Ταεκβοντό ΔΑΥΙΔ. Με επιφύλαξη παντός δικαιώματος.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
