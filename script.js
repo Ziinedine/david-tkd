@@ -1,12 +1,7 @@
-/* ============================================
-   DAVID Taekwondo - JavaScript
-   ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // ============================================
-    // HERO SLIDER
-    // ============================================
+    
     const slides = document.querySelectorAll('.slide');
     const dots = document.querySelectorAll('.dot');
     const prevBtn = document.getElementById('sliderPrev');
@@ -22,27 +17,21 @@ document.addEventListener('DOMContentLoaded', () => {
     let isPaused = false;
 
     function goToSlide(index) {
-        // Remove prev class from all
         slides.forEach(s => s.classList.remove('prev'));
         
-        // Set current as prev
         slides[currentSlide].classList.add('prev');
         slides[currentSlide].classList.remove('active');
         
-        // Update current
         currentSlide = index;
         if (currentSlide >= slides.length) currentSlide = 0;
         if (currentSlide < 0) currentSlide = slides.length - 1;
         
-        // Activate new slide
         slides[currentSlide].classList.add('active');
         slides[currentSlide].classList.remove('prev');
         
-        // Update dots
         dots.forEach(d => d.classList.remove('active'));
         dots[currentSlide].classList.add('active');
         
-        // Reset progress
         resetProgress();
     }
 
@@ -89,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         isPaused = false;
     }
 
-    // Event listeners for slider controls
     if (nextBtn) {
         nextBtn.addEventListener('click', () => {
             nextSlide();
@@ -102,7 +90,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Dot navigation
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
             const slideIndex = parseInt(dot.dataset.slide);
@@ -110,14 +97,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Pause on hover
     const heroSlider = document.getElementById('heroSlider');
     if (heroSlider) {
         heroSlider.addEventListener('mouseenter', pauseAutoplay);
         heroSlider.addEventListener('mouseleave', resumeAutoplay);
     }
 
-    // Touch/Swipe support
     let touchStartX = 0;
     let touchEndX = 0;
     
@@ -145,18 +130,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Keyboard navigation
     document.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowLeft') prevSlide();
         if (e.key === 'ArrowRight') nextSlide();
     });
 
-    // Start autoplay
     startAutoplay();
 
-    // ============================================
-    // HEADER SCROLL EFFECT
-    // ============================================
     const header = document.getElementById('main-header');
     
     function handleScroll() {
@@ -170,13 +150,10 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check
 
-    // ============================================
-    // HAMBURGER MENU
-    // ============================================
+    
     const hamburger = document.getElementById('hamburger');
     const navLinks = document.getElementById('navLinks');
     
-    // Create overlay element
     const overlay = document.createElement('div');
     overlay.className = 'nav-overlay';
     document.body.appendChild(overlay);
@@ -206,9 +183,7 @@ document.addEventListener('DOMContentLoaded', () => {
         link.addEventListener('click', closeMenu);
     });
 
-    // ============================================
-    // SMOOTH SCROLL
-    // ============================================
+    
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -225,15 +200,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ============================================
-    // SCROLL REVEAL ANIMATIONS
-    // ============================================
+    
     const revealElements = document.querySelectorAll('.reveal-up, .reveal-left, .reveal-right');
     
     const revealObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // Add a small delay based on the element's index in its parent
                 const siblings = entry.target.parentElement.children;
                 const index = Array.from(siblings).indexOf(entry.target);
                 
@@ -253,7 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(el);
     });
 
-    // Also observe cards without explicit reveal classes
     document.querySelectorAll('.card').forEach(card => {
         if (!card.classList.contains('reveal-up') && 
             !card.classList.contains('reveal-left') && 
@@ -263,9 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // ============================================
-    // CONTACT FORM
-    // ============================================
+    // 
     const contactForm = document.getElementById('contactForm');
     
     if (contactForm) {
@@ -318,9 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ============================================
-    // ACTIVE NAV LINK HIGHLIGHT
-    // ============================================
     const sections = document.querySelectorAll('section[id]');
     
     function highlightNavOnScroll() {
